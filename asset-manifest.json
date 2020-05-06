@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/hope-works-2/static/js/main.5ac511f7.chunk.js",
+    "main.js.map": "/hope-works-2/static/js/main.5ac511f7.chunk.js.map",
+    "runtime-main.js": "/hope-works-2/static/js/runtime-main.26f2e641.js",
+    "runtime-main.js.map": "/hope-works-2/static/js/runtime-main.26f2e641.js.map",
+    "static/js/2.d3cd4255.chunk.js": "/hope-works-2/static/js/2.d3cd4255.chunk.js",
+    "static/js/2.d3cd4255.chunk.js.map": "/hope-works-2/static/js/2.d3cd4255.chunk.js.map",
+    "index.html": "/hope-works-2/index.html",
+    "precache-manifest.07b26383d72cf6a16907f96e54655211.js": "/hope-works-2/precache-manifest.07b26383d72cf6a16907f96e54655211.js",
+    "service-worker.js": "/hope-works-2/service-worker.js",
+    "static/js/2.d3cd4255.chunk.js.LICENSE.txt": "/hope-works-2/static/js/2.d3cd4255.chunk.js.LICENSE.txt",
+    "static/media/hw.png": "/hope-works-2/static/media/hw.c671b095.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26f2e641.js",
+    "static/js/2.d3cd4255.chunk.js",
+    "static/js/main.5ac511f7.chunk.js"
+  ]
+}
