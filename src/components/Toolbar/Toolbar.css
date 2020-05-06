@@ -1,0 +1,115 @@
+.toolbar {
+  border: 3px solid rgb(0, 0, 0);
+  width: 200px;
+  position: fixed;
+  z-index: 13;
+  top: 20%;
+  left: 10px;
+  background: transparent;
+}
+.toolbar a {
+  padding: 2px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(35, 147, 240);
+  display: block;
+}
+.toolbar a:hover {
+  color: #064579;
+}
+.toolbar_logo {
+  color: purple;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.toolbar_list-items {
+  list-style-type: none;
+  list-style: none;
+  margin-left: -20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* --------STICKY NOTE-------- */
+
+#notes {
+  height: 250px;
+  width: 214px;
+  font-size: 18px;
+}
+
+.sticky_note {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 13;
+  top: 60%;
+  left: 1%;
+}
+/* DIV AROUND STICKY NOTE AND TOOLBAR */
+/* #sticky_tool {
+  display: block;
+} */
+
+
+
+@media screen and (max-width: 944px) {
+  .toolbar {
+    z-index: 13;
+    text-align: center;
+    background-color: rgb(251, 229, 184);
+    top: 0;
+    width: 97%;
+    height: 55px;
+  }
+  .toolbar a {
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+  .toolbar_list-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px;
+    padding: 0px;
+  }
+  .toolbar_logo a {
+    color: purple;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 10px;
+    padding: 0px;
+  }
+  .toolbar_navigation-items a:hover,
+  .toolbar_navigation-items a:active  {
+    color: #064579;
+  }
+  .spacer {
+    flex: 1;
+  }
+  a {
+    padding-top: -40px;
+  }
+  #notes {
+    font-size: 14px;
+    width: 168px;
+  }
+  .sticky_note {
+    font-size: 20px;
+    top: 24%;
+    left: 75%;
+  }
+
+}
+
+@media screen and (max-width: 758px)  {
+    .toolbar {display: none;}
+    .sticky_note {display: none;}
+}
