@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/hope-works-2/static/css/main.36cecf25.chunk.css",
-    "main.js": "/hope-works-2/static/js/main.7849cd30.chunk.js",
-    "main.js.map": "/hope-works-2/static/js/main.7849cd30.chunk.js.map",
+    "main.js": "/hope-works-2/static/js/main.677cd4fe.chunk.js",
+    "main.js.map": "/hope-works-2/static/js/main.677cd4fe.chunk.js.map",
     "runtime-main.js": "/hope-works-2/static/js/runtime-main.26f2e641.js",
     "runtime-main.js.map": "/hope-works-2/static/js/runtime-main.26f2e641.js.map",
-    "static/js/2.3cce6f2e.chunk.js": "/hope-works-2/static/js/2.3cce6f2e.chunk.js",
-    "static/js/2.3cce6f2e.chunk.js.map": "/hope-works-2/static/js/2.3cce6f2e.chunk.js.map",
+    "static/js/2.21f9d51d.chunk.js": "/hope-works-2/static/js/2.21f9d51d.chunk.js",
+    "static/js/2.21f9d51d.chunk.js.map": "/hope-works-2/static/js/2.21f9d51d.chunk.js.map",
     "index.html": "/hope-works-2/index.html",
-    "precache-manifest.e9d41a55f980107c02c0dc8b8ae97951.js": "/hope-works-2/precache-manifest.e9d41a55f980107c02c0dc8b8ae97951.js",
+    "precache-manifest.96490c3f47d7e628db439a50496dce99.js": "/hope-works-2/precache-manifest.96490c3f47d7e628db439a50496dce99.js",
     "service-worker.js": "/hope-works-2/service-worker.js",
     "static/css/main.36cecf25.chunk.css.map": "/hope-works-2/static/css/main.36cecf25.chunk.css.map",
-    "static/js/2.3cce6f2e.chunk.js.LICENSE.txt": "/hope-works-2/static/js/2.3cce6f2e.chunk.js.LICENSE.txt",
+    "static/js/2.21f9d51d.chunk.js.LICENSE.txt": "/hope-works-2/static/js/2.21f9d51d.chunk.js.LICENSE.txt",
     "static/media/hw.png": "/hope-works-2/static/media/hw.c671b095.png"
   },
   "entrypoints": [
     "static/js/runtime-main.26f2e641.js",
-    "static/js/2.3cce6f2e.chunk.js",
+    "static/js/2.21f9d51d.chunk.js",
     "static/css/main.36cecf25.chunk.css",
-    "static/js/main.7849cd30.chunk.js"
+    "static/js/main.677cd4fe.chunk.js"
   ]
 }
