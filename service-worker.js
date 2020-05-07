@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hope-works-2/precache-manifest.569035f27d51b1ba479164322ad1811b.js"
+  "/hope-works-2/precache-manifest.e9d41a55f980107c02c0dc8b8ae97951.js"
 );
 
 self.addEventListener('message', (event) => {
