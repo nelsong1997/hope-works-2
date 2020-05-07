@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "814445f76e854577179ce959956e0e1c",
+    "revision": "14a623c43fddeeb74ea38175e843bb9f",
     "url": "/hope-works-2/index.html"
   },
   {
-    "revision": "cd76fd89a1bdee010f4d",
+    "revision": "ced54f443229110dd2a8",
     "url": "/hope-works-2/static/css/main.36cecf25.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hope-works-2/static/js/2.3cce6f2e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cd76fd89a1bdee010f4d",
-    "url": "/hope-works-2/static/js/main.29baa850.chunk.js"
+    "revision": "ced54f443229110dd2a8",
+    "url": "/hope-works-2/static/js/main.45fffc45.chunk.js"
   },
   {
     "revision": "af307e51b55ec70dd3b2",
