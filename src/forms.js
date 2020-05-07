@@ -1,5 +1,7 @@
 import React from 'react';
 import Hw from './images/hw.png';
+import './style.css'
+import theData from './the_data.js'
 
 class Forms extends React.Component {
     constructor() {
@@ -52,8 +54,9 @@ class Forms extends React.Component {
     }
 
     async componentDidMount() {
-        const response = await fetch("/forms");
-        const formsObj = await response.json();
+        // const response = await fetch("/forms");
+        // const formsObj = await response.json();
+        let formsObj = theData
         this.setState({allForms: formsObj, selectedForms: formsObj})
     }
 

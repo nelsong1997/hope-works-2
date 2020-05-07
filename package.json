@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "assert": "^2.0.0",
+    "concurrently": "^5.2.0",
     "connect-ensure-login": "^0.1.1",
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
@@ -25,11 +26,14 @@
   },
   "proxy": "http://localhost:5000",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "http://nelsong1997.github.io/hope-works-2/",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -44,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

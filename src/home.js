@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import Hw from './images/hw.png';
+import './style.css'
 
 class Home extends React.Component {
     constructor() {

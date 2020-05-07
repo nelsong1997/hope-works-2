@@ -1,5 +1,6 @@
 import React from "react";
 import Hw from './images/hw.png';
+import './style.css'
 
 class Form extends React.Component {
   constructor() {
@@ -22,7 +23,7 @@ class Form extends React.Component {
       anotherSchool: false
     };
 
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
     this.displayIncidents = this.displayIncidents.bind(this);
     this.numIncidentsChange = this.numIncidentsChange.bind(this);
     this.numOrdersChange = this.numOrdersChange.bind(this);
@@ -45,133 +46,133 @@ class Form extends React.Component {
     this.schoolChange = this.schoolChange.bind(this);
   }
 
-  async handleSubmit(evnt) {
-    evnt.preventDefault();
+  // async handleSubmit(evnt) {
+  //   evnt.preventDefault();
 
-    let firstName = document.getElementById("first-name");
-    let lastName = document.getElementById("last-name");
-    let identifiers = document.getElementById("identifiers");
-    let advocateInitials = document.getElementById("advocate-initials");
-    let contactDate = document.getElementById("contact-date");
-    let cityTown = document.getElementById("city-town");
-    let phone = document.getElementById("phone");
-    let survivorGender = document.getElementById("survivor-gender");
-    let dob = document.getElementById("dob");
-    let ageLow = document.getElementById("age-range-0")
-    let ageHigh = document.getElementById("age-range-1")
-    let numberChildren = document.getElementById("number-children");
-    let nameOfSchool = document.getElementById("name-of-school");
-    let otherSchool = document.getElementById("other-school");
-    let referrer = document.getElementById("hear-about");
-    let contactCall = document.getElementById("contact-calls");
-    let contactInPerson = document.getElementById("contact-in-person");
-    let contactEmail = document.getElementById("contact-email");
-    let contactInstantMessaging = document.getElementById("contact-instant-messaging");
-    let contactOnBehalf = document.getElementById("contact-on-behalf");
-    let groups = document.getElementById("groups");
-    let safeHomeEntered = document.getElementById("safe-home-entered");
-    let safeHomeExited = document.getElementById("safe-home-exited");
-    let safeHomeExtension = document.getElementById("safe-home-extension");
-    let notes = document.getElementById("notes");
+  //   let firstName = document.getElementById("first-name");
+  //   let lastName = document.getElementById("last-name");
+  //   let identifiers = document.getElementById("identifiers");
+  //   let advocateInitials = document.getElementById("advocate-initials");
+  //   let contactDate = document.getElementById("contact-date");
+  //   let cityTown = document.getElementById("city-town");
+  //   let phone = document.getElementById("phone");
+  //   let survivorGender = document.getElementById("survivor-gender");
+  //   let dob = document.getElementById("dob");
+  //   let ageLow = document.getElementById("age-range-0")
+  //   let ageHigh = document.getElementById("age-range-1")
+  //   let numberChildren = document.getElementById("number-children");
+  //   let nameOfSchool = document.getElementById("name-of-school");
+  //   let otherSchool = document.getElementById("other-school");
+  //   let referrer = document.getElementById("hear-about");
+  //   let contactCall = document.getElementById("contact-calls");
+  //   let contactInPerson = document.getElementById("contact-in-person");
+  //   let contactEmail = document.getElementById("contact-email");
+  //   let contactInstantMessaging = document.getElementById("contact-instant-messaging");
+  //   let contactOnBehalf = document.getElementById("contact-on-behalf");
+  //   let groups = document.getElementById("groups");
+  //   let safeHomeEntered = document.getElementById("safe-home-entered");
+  //   let safeHomeExited = document.getElementById("safe-home-exited");
+  //   let safeHomeExtension = document.getElementById("safe-home-extension");
+  //   let notes = document.getElementById("notes");
     
-    if (this.state.numIncidents > 10) {
-      this.setState({ errorMessage: "Error submitting form: Too many incidents."})
-      return
-    } else if (this.state.numOrders > 10) {
-      this.setState({ errorMessage: "Error submitting form: Too many orders."})
-      return
-    } else if (this.state.newUser && ((ageLow.value==="" && ageHigh.value!=="") || (ageLow.value!=="" && ageHigh.value===""))) {
-      this.setState( {errorMessage: "Error submitting form: Only one of the Age Range fields is filled; please fill both or neither"} )
-      return
-    } else if (contactDate.value.length < 10) {
-      this.setState( {errorMessage: "Error submitting form: the Contact Date field is required"} )
-      return
-    } else if (firstName.value==="") {
-      this.setState( {errorMessage: "Error submitting form: the First Name field is required"} )
-      return
-    } else {
-      this.setState({ errorMessage: ""})
-    }
-    let theData = {
-      timestamp: new Date().toLocaleString(),
-      newUser: this.state.newUser,
-      firstName: firstName.value.trim(),
-      lastName: lastName.value.trim(),
-      otherIdentifiers: identifiers.value,
-      advocateInitials: advocateInitials.value,
-      contactDate: contactDate.value,
-      city: cityTown.value,
-      phone: phone.value,
-      survivorType: radioButtonValue("survivor-type"),
-    };
+  //   if (this.state.numIncidents > 10) {
+  //     this.setState({ errorMessage: "Error submitting form: Too many incidents."})
+  //     return
+  //   } else if (this.state.numOrders > 10) {
+  //     this.setState({ errorMessage: "Error submitting form: Too many orders."})
+  //     return
+  //   } else if (this.state.newUser && ((ageLow.value==="" && ageHigh.value!=="") || (ageLow.value!=="" && ageHigh.value===""))) {
+  //     this.setState( {errorMessage: "Error submitting form: Only one of the Age Range fields is filled; please fill both or neither"} )
+  //     return
+  //   } else if (contactDate.value.length < 10) {
+  //     this.setState( {errorMessage: "Error submitting form: the Contact Date field is required"} )
+  //     return
+  //   } else if (firstName.value==="") {
+  //     this.setState( {errorMessage: "Error submitting form: the First Name field is required"} )
+  //     return
+  //   } else {
+  //     this.setState({ errorMessage: ""})
+  //   }
+  //   let theData = {
+  //     timestamp: new Date().toLocaleString(),
+  //     newUser: this.state.newUser,
+  //     firstName: firstName.value.trim(),
+  //     lastName: lastName.value.trim(),
+  //     otherIdentifiers: identifiers.value,
+  //     advocateInitials: advocateInitials.value,
+  //     contactDate: contactDate.value,
+  //     city: cityTown.value,
+  //     phone: phone.value,
+  //     survivorType: radioButtonValue("survivor-type"),
+  //   };
 
-    if (this.state.newUser) {
-      theData.survivorGender = survivorGender.value;
-      theData.dateOfBirth = dob.value;
-      theData.ageRange = [ageLow.value, ageHigh.value];
-      theData.language = radioButtonValue("language");
-      theData.ethnicity = checkBoxValues("ethnicity");
-      theData.numberOfChildren = numberChildren.value;
-      theData.disability = radioButtonValue("disability");
-      theData.miscChars = checkBoxValues("characteristics");
-      if (this.state.isAStudent && !this.state.anotherSchool) {
-        theData.nameOfSchool = nameOfSchool.value
-      } else if (this.state.isAStudent && this.state.anotherSchool) {
-        theData.nameOfSchool = "Other: " + otherSchool.value
-      }
-      theData.referrer = referrer.value;
-    }
+  //   if (this.state.newUser) {
+  //     theData.survivorGender = survivorGender.value;
+  //     theData.dateOfBirth = dob.value;
+  //     theData.ageRange = [ageLow.value, ageHigh.value];
+  //     theData.language = radioButtonValue("language");
+  //     theData.ethnicity = checkBoxValues("ethnicity");
+  //     theData.numberOfChildren = numberChildren.value;
+  //     theData.disability = radioButtonValue("disability");
+  //     theData.miscChars = checkBoxValues("characteristics");
+  //     if (this.state.isAStudent && !this.state.anotherSchool) {
+  //       theData.nameOfSchool = nameOfSchool.value
+  //     } else if (this.state.isAStudent && this.state.anotherSchool) {
+  //       theData.nameOfSchool = "Other: " + otherSchool.value
+  //     }
+  //     theData.referrer = referrer.value;
+  //   }
 
-    if (this.state.newUser || (!this.state.newUser && this.state.newIncident)) {
-      theData.incidents = getIncidents(this.state.numIncidents);
-      theData.protectionOrders = getOrders(this.state.numOrders);
-      theData.partiallyServedReasons = checkBoxValues("partially-served");
-    }
+  //   if (this.state.newUser || (!this.state.newUser && this.state.newIncident)) {
+  //     theData.incidents = getIncidents(this.state.numIncidents);
+  //     theData.protectionOrders = getOrders(this.state.numOrders);
+  //     theData.partiallyServedReasons = checkBoxValues("partially-served");
+  //   }
 
-    theData.safeToCall = radioButtonValue("safe-to-call");
-    theData.safeToLeaveMessage = radioButtonValue("safe-to-leave-message");
-    theData.contactTypes = {
-        calls: contactCall.value,
-        inPerson: contactInPerson.value,
-        email: contactEmail.value,
-        instantMessaging: contactInstantMessaging.value,
-        onBehalf: contactOnBehalf.value
-      };
-    theData.timeSpent = radioButtonValue("time-call");
-    theData.servicesProvided = {
-        advocacy: checkBoxValues("advocacy"),
-        support: checkBoxValues("support"),
-        medical: checkBoxValues("medical"),
-        assistanceServices: checkBoxValues("assistance-services"),
-        informationReferral: checkBoxValues("information-referral"),
-        safeHome: {
-          entered: safeHomeEntered.value,
-          exited: safeHomeExited.value,
-          extension: safeHomeExtension.value
-        },                                
-        groups: groups.value
-      };
-    if (this.state.referrals) {
-      theData.referrals = referralValues("referrals");
-    }
-    theData.outcomeMeasures = radioButtonValue("plan-for-safety");
-    theData.communityResources = radioButtonValue("community-resources");
-    theData.rightsAndOptions = radioButtonValue("rights-options");
-    theData.notes = notes.value;
+  //   theData.safeToCall = radioButtonValue("safe-to-call");
+  //   theData.safeToLeaveMessage = radioButtonValue("safe-to-leave-message");
+  //   theData.contactTypes = {
+  //       calls: contactCall.value,
+  //       inPerson: contactInPerson.value,
+  //       email: contactEmail.value,
+  //       instantMessaging: contactInstantMessaging.value,
+  //       onBehalf: contactOnBehalf.value
+  //     };
+  //   theData.timeSpent = radioButtonValue("time-call");
+  //   theData.servicesProvided = {
+  //       advocacy: checkBoxValues("advocacy"),
+  //       support: checkBoxValues("support"),
+  //       medical: checkBoxValues("medical"),
+  //       assistanceServices: checkBoxValues("assistance-services"),
+  //       informationReferral: checkBoxValues("information-referral"),
+  //       safeHome: {
+  //         entered: safeHomeEntered.value,
+  //         exited: safeHomeExited.value,
+  //         extension: safeHomeExtension.value
+  //       },                                
+  //       groups: groups.value
+  //     };
+  //   if (this.state.referrals) {
+  //     theData.referrals = referralValues("referrals");
+  //   }
+  //   theData.outcomeMeasures = radioButtonValue("plan-for-safety");
+  //   theData.communityResources = radioButtonValue("community-resources");
+  //   theData.rightsAndOptions = radioButtonValue("rights-options");
+  //   theData.notes = notes.value;
 
-    const response = await fetch("/form", {
-      method: "POST",
-      headers:{
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(theData)
-    });
-    if (response.status === 200) {
-      console.log("form added")
-    }
+  //   const response = await fetch("/form", {
+  //     method: "POST",
+  //     headers:{
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(theData)
+  //   });
+  //   if (response.status === 200) {
+  //     console.log("form added")
+  //   }
 
-    window.location.replace("/home")
-  }
+  //   window.location.replace("/home")
+  // }
 
   userTypeChange(evnt) {
     if (this.state.newUser) {
@@ -1231,11 +1232,11 @@ class Form extends React.Component {
   render() {
     return (
       <div id="form-page">
-          <div className="sticky_note">
+          {/* <div className="sticky_note">
               <label htmlFor="notes">Notes: </label>
               <br />
               <textarea id="notes" />
-          </div>
+          </div> */}
         <form id="the-form">
           <div id="title">  
            <img className="form-logo" src={Hw} alt="Hope Works"/>
@@ -1544,7 +1545,7 @@ class Form extends React.Component {
             </div>
           </div>
           <h4>{this.state.errorMessage}</h4>
-          <button onClick={this.handleSubmit}>submit</button>
+          <button style={{color: "gray"}}>submit</button>
         </form>
       </div>
     );
